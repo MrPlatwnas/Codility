@@ -7,7 +7,6 @@ Date: 15 March 2016
 
 #include <stdio.h>
 #include <stdint.h>
-#include <inttypes.h>
 #include <stdbool.h>
 
 uint16_t solution(uint32_t input_number)
@@ -19,8 +18,8 @@ uint16_t solution(uint32_t input_number)
   uint8_t digit;
   while(input_number > 0)
   {
-    digit = input_number % 2;
-    input_number /= 2;
+    digit = input_number & 1;
+    input_number >>= 1;
 
     if(((!digit && binary_gap_max) || digit) && !binary_gap_edge)
     {
@@ -46,7 +45,7 @@ int main(void)
   uint32_t input_number;
 
   printf("Give a number: ");
-  scanf("%" SCNd32, &input_number);
+  scanf("%d", &input_number);
 
   uint16_t binary_gap;
   binary_gap = solution(input_number);
