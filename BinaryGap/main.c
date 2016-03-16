@@ -3,6 +3,7 @@ File: main.c
 Author: Platon-Nikolaos Kiorpelidis
 Purpose: Interface
 Date: 15 March 2016
+Elapsed Time: 28 mins 17 secs
 *******************************************/
 
 #include <stdio.h>
