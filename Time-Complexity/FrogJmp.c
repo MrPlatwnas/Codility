@@ -12,8 +12,7 @@ Elapsed Time: 2 mins 47 secs
 uint32_t solution(uint32_t start_pos, uint32_t end_pos, uint32_t step)
 {
   start_pos = end_pos - start_pos;
-  if(start_pos % step == 0) return (start_pos / step);
-  else return (start_pos / step) + 1;
+  return start_pos % step ? (start_pos / step) + 1 : start_pos / step;
 }
 
 int main(int argc, const char *argv[])
