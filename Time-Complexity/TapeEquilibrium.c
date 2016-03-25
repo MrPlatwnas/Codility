@@ -1,9 +1,9 @@
 /*******************************************
-File: FrogJmp.c
+File: TapeEquilibrium.c
 Author: Platon-Nikolaos Kiorpelidis
 Purpose: Solution to TapeEquilibrium problem
 Date: 25 March 2016
-Elapsed Time:
+Elapsed Time: 6 mins 32 secs
 *******************************************/
 
 #include <stdio.h>
